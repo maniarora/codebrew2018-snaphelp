@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html> 
+
+    <head>
+        <title>SnapHelp</title>
+    </head>
+
+    <body>
+         <% incidents.forEach(function(incident){%>
+            
+                    <img src="<%=incident.image%>">
+                    
+                        <h4><%=incident.username%></h4>     
+                        <h4><%=incident.tag%></h4>  
+                        <h4><%=incident.lat%></h4>  
+                        <h4><%=incident.long%></h4>
+                        <h4><%=incident.time%></h4>   
+                            
+                    
+                  
+             
+            
+
+        <%})%>
+    </body>
+
+</html>
