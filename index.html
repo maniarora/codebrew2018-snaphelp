@@ -55,7 +55,8 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 26px;
+        font-size: 1.2em;
+        width: 25%;
         background-color:#f2f2f2; 
       
     }
@@ -105,24 +106,37 @@
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=visualization">
 
-      var map, heatmap;
-
+      var map, heatmap,marker;
+      var myLatLng = {lat: 37.775, lng: -122.434};
+   
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
+          zoom: 4,
           center: {lat: 37.775, lng: -122.434},
           mapTypeId: 'satellite'
         });
+
+        marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+        });
+
 
         heatmap = new google.maps.visualization.HeatmapLayer({
           data: getPoints(),
           map: map
         });
+
+
+      
+
       }
 
       function toggleHeatmap() {
         heatmap.setMap(heatmap.getMap() ? null : map);
       }
+
 
       function changeGradient() {
         var gradient = [
