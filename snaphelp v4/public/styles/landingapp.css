@@ -1,5 +1,5 @@
 body {
-    background: url(https://images.unsplash.com/photo-1498732528303-ceac1ff31508?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=86fdaad78b72bb853d7563dbb6698ff3&auto=format&fit=crop&w=750&q=80);
+    background: url(https://images.unsplash.com/photo-1521493959102-bdd6677fdd81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a027094c15a1ae14bf72f8f71d9380b&auto=format&fit=crop&w=750&q=80);
     background-size: cover;
     background-position: center;
 }
@@ -9,22 +9,17 @@ html {
     width: 100%;
     height: 100%;
     font-family: "Lato";
-    
+    color: white;
 }
 
 h1 {
     font-weight: 700;
     font-size: 5em;
-    color: white;
 }
 
 
-h3{
-    color: white;
-    font-size: 2em;
-}
 .content{
-    padding-top: 5%;
+    padding-top: 25%;
     text-align: center;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     0px 8px 13px rgba(0,0,0,0.1),
